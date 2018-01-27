@@ -1,0 +1,19 @@
+{
+    "name": "buddysystem/buddy-sys",
+    "type": "typo3-cms-extension",
+    "description": "Buddy system ",
+    "authors": [
+        {
+            "name": "Hrushikesh Sakunde",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^8.7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "BuddySystem\\BuddySys\\": "Classes"
+        }
+    }
+}

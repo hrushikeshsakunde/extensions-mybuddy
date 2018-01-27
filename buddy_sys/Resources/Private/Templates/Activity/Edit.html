@@ -1,0 +1,38 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+This template displays a EDIT form for the current domain object.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        Edit.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+
+
+<f:flashMessages />
+
+<f:render partial="FormErrors" arguments="{object:Activity}" />
+
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+      Edit Activity </div>
+
+    <div class="panel-body">
+
+      <f:form action="update" name="activity" object="{activity}" >
+        <f:render partial="Activity/FormFields" arguments="{activity:activity}" />
+        <br />
+        <f:form.submit value="Save" class="btn btn-default" id="btnEditActivity" />
+      </f:form>
+
+    </div>
+  </div>
+</f:section>
+</html>

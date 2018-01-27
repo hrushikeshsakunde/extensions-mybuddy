@@ -1,0 +1,67 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+This Template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+<f:flashMessages />
+
+
+
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
+                Activities</div>
+            <div class="panel-body">
+
+            </div>
+
+		    <table id="activityTable" class="table table-stripped table-hover" >
+			<thead>
+				<tr>
+					<th>Activity Id</th>
+					<th>Name</th>
+					<th>Description</th>
+					<th>Place</th>
+					<th>StartDate</th>
+					<th>EndDate</th>
+					<th>Edit</th>
+					<th>Delete</th>
+				</tr>
+			</thead>
+    <tbody>
+	    <f:for each="{activities}" as="activity">
+		    <tr>
+		    	<td><f:link.action action="show" arguments="{activity : activity}"> {activity.id}</f:link.action></td>
+			    <td><f:link.action action="show" arguments="{activity : activity}"> {activity.name}</f:link.action></td>
+			    <td><f:link.action action="show" arguments="{activity : activity}"> {activity.description}</f:link.action></td>
+			    <td><f:link.action action="show" arguments="{activity : activity}"> {activity.place}</f:link.action></td>
+			    <td><f:link.action action="show" arguments="{activity : activity}"> {activity.startdate -> f:format.date(format:'d/m/Y H:i')}</f:link.action></td>
+			    <td><f:link.action action="show" arguments="{activity : activity}"> {activity.enddate -> f:format.date(format:'d/m/Y H:i')}</f:link.action></td>
+			    <td><f:link.action action="edit" arguments="{activity : activity}">
+					<span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+					</f:link.action></td>
+
+			    <td><f:link.action action="delete" arguments="{activity : activity}">
+					<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+					</f:link.action></td>
+		    </tr>
+	    </f:for>
+    </tbody>
+</table>
+
+
+
+        </div>
+
+</f:section>
+</html>

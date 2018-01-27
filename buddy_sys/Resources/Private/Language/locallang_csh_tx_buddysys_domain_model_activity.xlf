@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-01-17T23:43:25Z" product-name="buddy_sys">
+		<header/>
+		<body>
+			<trans-unit id="id.description">
+				<source>id</source>
+			</trans-unit>
+			<trans-unit id="name.description">
+				<source>name</source>
+			</trans-unit>
+			<trans-unit id="description.description">
+				<source>description</source>
+			</trans-unit>
+			<trans-unit id="place.description">
+				<source>place</source>
+			</trans-unit>
+			<trans-unit id="startdate.description">
+				<source>startdate</source>
+			</trans-unit>
+			<trans-unit id="enddate.description">
+				<source>enddate</source>
+			</trans-unit>
+			<trans-unit id="userid.description">
+				<source>userid</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,169 @@
+{
+    "modules": [
+        {
+            "config": {
+                "position": [
+                    129,
+                    64
+                ]
+            },
+            "name": "New Model Object",
+            "value": {
+                "actionGroup": {
+                    "_default0_list": true,
+                    "_default1_show": true,
+                    "_default2_new_create": true,
+                    "_default3_edit_update": true,
+                    "_default4_delete": true,
+                    "customActions": []
+                },
+                "name": "Activity",
+                "objectsettings": {
+                    "addDeletedField": true,
+                    "addHiddenField": true,
+                    "addStarttimeEndtimeFields": true,
+                    "aggregateRoot": true,
+                    "categorizable": false,
+                    "description": "",
+                    "mapToTable": "",
+                    "parentClass": "",
+                    "sorting": false,
+                    "type": "Entity",
+                    "uid": "1366026816729"
+                },
+                "propertyGroup": {
+                    "properties": [
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": false,
+                            "propertyIsRequired": true,
+                            "propertyName": "id",
+                            "propertyType": "Integer",
+                            "uid": "250006995633"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": false,
+                            "propertyIsRequired": true,
+                            "propertyName": "name",
+                            "propertyType": "String",
+                            "uid": "1171890758049"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": false,
+                            "propertyIsRequired": true,
+                            "propertyName": "description",
+                            "propertyType": "Text",
+                            "uid": "1099220186103"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": false,
+                            "propertyIsRequired": true,
+                            "propertyName": "place",
+                            "propertyType": "Text",
+                            "uid": "249408444062"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": false,
+                            "propertyIsRequired": true,
+                            "propertyName": "startdate",
+                            "propertyType": "NativeDateTime",
+                            "uid": "45775262066"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": false,
+                            "propertyIsRequired": true,
+                            "propertyName": "enddate",
+                            "propertyType": "NativeDateTime",
+                            "uid": "928113562974"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "userid",
+                            "propertyType": "Integer",
+                            "uid": "900731388751"
+                        }
+                    ]
+                },
+                "relationGroup": {
+                    "relations": []
+                }
+            }
+        }
+    ],
+    "properties": {
+        "backendModules": [],
+        "description": "Buddy system ",
+        "emConf": {
+            "category": "plugin",
+            "custom_category": "",
+            "dependsOn": "typo3 => 8.7.0-8.7.99\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "skipGenerateDocumentationTemplate": false,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "8.7.0-8.7.99",
+            "version": "1.0.0"
+        },
+        "extensionKey": "buddy_sys",
+        "name": "BuddySystem",
+        "originalExtensionKey": "buddy_sys",
+        "originalVendorName": "BuddySystem",
+        "persons": [
+            {
+                "company": "buddy system",
+                "email": "sakundehrushi@gmail.com",
+                "name": "Hrushikesh Sakunde",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [
+            {
+                "actions": {
+                    "controllerActionCombinations": "Activity => list,show",
+                    "noncacheableActions": "",
+                    "switchableActions": ""
+                },
+                "key": "information",
+                "name": "Information"
+            },
+            {
+                "actions": {
+                    "controllerActionCombinations": "Activity =>  new,create,edit,update,delete",
+                    "noncacheableActions": "",
+                    "switchableActions": ""
+                },
+                "key": "management",
+                "name": "Management"
+            }
+        ],
+        "vendorName": "BuddySystem"
+    },
+    "wires": [],
+    "log": {
+        "last_modified": "2018-01-17 11:43",
+        "extension_builder_version": "8.7.0",
+        "be_user": " (1)"
+    }
+}
